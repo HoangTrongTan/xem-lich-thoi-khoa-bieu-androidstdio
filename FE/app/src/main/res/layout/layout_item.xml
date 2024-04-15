@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="15dp"
+    >
+    <LinearLayout
+        android:id="@+id/list_item_ngay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="9dp"
+
+        >
+        <TextView
+            android:id="@+id/tiet_firl_last"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abcdef - abcdef"
+            android:textSize="20dp"
+            android:textColor="#06710B"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/sophong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abcdef - abcdef"
+            android:textSize="20dp"
+            android:textColor="#06710B"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tenmon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abcdef - abcdef"
+            android:textSize="20dp"
+            android:textColor="#06710B"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/giangvien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="20dp"
+            android:textColor="#06710B"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tenlop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abcdef - abcdef"
+            android:textSize="20dp"
+            android:textColor="#06710B"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

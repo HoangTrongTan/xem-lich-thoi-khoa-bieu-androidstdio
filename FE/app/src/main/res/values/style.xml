@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomDatePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#84EC0C</item>  <!-- Đổi màu chữ và đường viền -->
+        <item name="android:textColorPrimary">#1D9489</item>  <!-- Đổi màu nền header -->
+        <item name="android:background">@color/white</item>  <!-- Đổi màu nền background -->
+    </style>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash_Screen"
+    android:background="@drawable/bgspalsh"
+    >
+    <View
+
+        android:id="@+id/topview1"
+        android:layout_width="30dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:background="#FFFF"
+        />
+    <View
+        android:visibility="invisible"
+        android:id="@+id/topview2"
+        android:layout_toStartOf="@+id/topview1"
+        android:layout_width="30dp"
+        android:layout_height="90dp"
+        android:background="#CDDC39"
+        android:layout_marginEnd="20dp"
+        />
+    <View
+        android:visibility="invisible"
+        android:id="@+id/topview3"
+        android:layout_toStartOf="@+id/topview2"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:background="#00BCD4"
+        android:layout_marginEnd="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:visibility="invisible"
+            android:id="@+id/logo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/imag_splash"
+            />
+        <com.example.appstudent.customTextView.Pacifico
+            android:visibility="invisible"
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi ~.~"
+            android:textColor="#FFF"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+        <com.example.appstudent.customTextView.Pacifico
+            android:visibility="invisible"
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nothing is Impossible...."
+            android:textColor="#FFF"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <View
+
+        android:id="@+id/bottomview1"
+        android:layout_width="30dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:background="#FBFBFB"
+        />
+    <View
+        android:visibility="invisible"
+        android:id="@+id/bottomview2"
+        android:layout_width="30dp"
+        android:layout_height="90dp"
+        android:background="#E91E63"
+        android:layout_toEndOf="@+id/bottomview1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        />
+    <View
+        android:visibility="invisible"
+        android:id="@+id/bottomview3"
+        android:layout_toEndOf="@+id/bottomview2"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:background="#673AB7"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        />
+
+</RelativeLayout>

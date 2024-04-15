@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tablayout_Fragment.bottom_fragment_canhan"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_home_trangchu"
+        >
+        <TextView
+            android:id="@+id/caNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Cá nhân"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/caNhan"
+            android:gravity="center"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/anh"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/namgiaumat"
+                android:elevation="15dp"
+                />
+            <TextView
+                android:id="@+id/tensv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn Phú Cao"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/masv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000787"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông tin chung"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textColor="#0920A1"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Recyclethongtinchung"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="10dp"
+                        android:text="Cá Nhân"
+                        android:textColor="#0920A1"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btnsua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+
+                        android:text="sửa"
+                        android:textColor="#ED1212"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleCanhan"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                />
+            <Button
+                android:id="@+id/btn_dangxuat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng xuất"
+                android:background="@drawable/quyche_quydinh"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:elevation="15dp"
+                android:padding="10dp"
+                android:textColor="#FFF"
+                android:layout_marginBottom="50dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

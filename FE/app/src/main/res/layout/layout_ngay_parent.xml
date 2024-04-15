@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <com.example.appstudent.customTextView.FFF_Tusj
+        android:id="@+id/buoihoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="buổi"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#0CCD13"
+        android:padding="30dp"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

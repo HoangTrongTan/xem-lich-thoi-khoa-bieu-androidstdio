@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tablayout_Fragment.HocKy_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn học kỳ"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/chonhocky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Học kỳ 1 Năm học 2022-2023"
+            android:background="#FFF"
+            android:textColor="#066C0A"
+            android:elevation="20dp"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danh sách môn học: "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_hocky"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />+
+
+    </LinearLayout>
+
+</FrameLayout>

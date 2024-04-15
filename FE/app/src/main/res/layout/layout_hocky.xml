@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+
+    >
+    <LinearLayout
+        android:id="@+id/linear_hocky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:background="#0CD815"
+        >
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tenmon_hocky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="môn học"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/mamonhoc_hocky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mã môn học"
+                android:layout_alignParentEnd="true"
+
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/expandble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFF"
+            android:padding="20dp"
+            >
+
+            <TextView
+                android:id="@+id/giangvien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="giảng viên"
+
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/tongsotiet_hocky"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tổng số tiết"
+
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/thoigianhoc_hocky"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thời gian học"
+                android:gravity="center"
+                />
+            <Button
+                android:id="@+id/danhsachsinhvien_hocky"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Danh sách sinh viên"
+                android:textStyle="italic"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/bottomsheet_radius"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:elevation="50dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

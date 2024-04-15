@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Tablayout_Fragment.bottom_fragment_home">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_top_home_trangchu"
+                >
+                <com.example.appstudent.customTextView.Pacifico
+                    android:id="@+id/TenSinhVien"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello Sơn Tùng MTP !"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#FFF"
+                    />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/imgegif"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/gifimage"
+                    />
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpagerHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="60dp"
+                    android:paddingEnd="60dp"
+                    android:elevation="20dp"
+                    />
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/circleIndicator3Home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    app:ci_drawable="@drawable/indicator"
+                    />
+
+            </LinearLayout>
+            <com.example.appstudent.customTextView.Pacifico
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Danh Mục"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginStart="20dp"
+                />
+            <!--        Cái 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                >
+                <!--            Lịch-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <ImageButton
+                        android:id="@+id/btnLichHoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lich"
+                        android:padding="10dp"
+                        android:background="@drawable/bottomsheet_radius"
+                        android:elevation="20dp"
+                        />
+                    <com.example.appstudent.customTextView.Pacifico
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lịch Học"
+                        android:textColor="#000"
+                        />
+                </LinearLayout>
+                <!--end lịch-->
+                <!--            -->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <ImageButton
+                        android:id="@+id/btnGioiThieu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/gioithieu"
+                        android:padding="10dp"
+                        android:background="@drawable/infoma"
+                        android:elevation="20dp"
+                        />
+
+                    <com.example.appstudent.customTextView.Pacifico
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giới Thiệu"
+                        android:textColor="#000"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <ImageButton
+                        android:id="@+id/btnQuyCheQuyDinh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/quyche"
+                        android:padding="16dp"
+                        android:background="@drawable/quyche_quydinh"
+                        android:elevation="20dp"
+                        />
+                    <com.example.appstudent.customTextView.Pacifico
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quy chế - Quy định"
+                        android:textColor="#000"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                >
+                <!--            Lịch-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <ImageButton
+                        android:id="@+id/btnDiemThi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/money"
+                        android:padding="15dp"
+                        android:background="@drawable/xemdiem"
+                        android:elevation="20dp"
+                        />
+                    <com.example.appstudent.customTextView.Pacifico
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Học phí"
+                        android:textColor="#000"
+                        />
+                </LinearLayout>
+                <!--end lịch-->
+                <!--            -->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <ImageButton
+                        android:id="@+id/btnDkiMon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dkmon"
+                        android:padding="14dp"
+                        android:background="@drawable/hocphi"
+                        android:elevation="20dp"
+                        />
+
+                    <com.example.appstudent.customTextView.Pacifico
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đăng kí môn"
+                        android:textColor="#000"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <ImageButton
+                        android:id="@+id/btnXemdiem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/diemthi"
+                        android:padding="16dp"
+                        android:background="@drawable/dangkymon"
+                        android:elevation="20dp"
+                        />
+                    <com.example.appstudent.customTextView.Pacifico
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xem điểm"
+                        android:textColor="#000"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</FrameLayout>

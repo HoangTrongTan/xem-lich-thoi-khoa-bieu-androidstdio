@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    >
+    <com.example.appstudent.customTextView.FFF_Tusj
+        android:id="@+id/SoThuTu"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="a"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textColor="#3B57F4"
+        />
+    <TextView
+        android:id="@+id/HoTenSinhVien"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Nguyễn Văn a"
+        android:textStyle="italic|bold"
+        android:textSize="15dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/MaSinhVien"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="7878787"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/Lop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DK11-CNTT1"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        />
+
+</LinearLayout>

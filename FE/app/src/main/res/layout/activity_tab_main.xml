@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabMain">
+    <ImageButton
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:background="@drawable/corner_16dp_borrder_gray"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        />
+    <com.example.appstudent.customTextView.FFF_Tusj
+        android:id="@+id/namesinhvien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nguyễn văn đb"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:textColor="#0CCD13"
+        android:gravity="center"
+        />
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_layout"
+        app:tabSelectedTextColor="#0CCD13"
+        android:layout_below="@+id/namesinhvien"
+        >
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tuần"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Học Kỳ"
+            />
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout"
+        />
+</RelativeLayout>

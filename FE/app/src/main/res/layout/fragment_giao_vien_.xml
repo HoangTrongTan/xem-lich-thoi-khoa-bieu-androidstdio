@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Tablayout_Fragment.GiaoVien_Fragment"
+    android:background="@drawable/bg_top_home_trangchu"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:elevation="15dp"
+        app:cardCornerRadius="15dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_top_home_trangchu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:gravity="center"
+                    android:text="Giảng Viên"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tengiaovien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Nguyễn thị a "
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/giaoviengif" />
+                <TextView
+                    android:id="@+id/magv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="03456789"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gv_canhan"
+                android:layout_margin="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/phonee"
+                    android:background="@drawable/bottomsheet_radius"
+                    android:layout_margin="10dp"
+                    android:layout_centerVertical="true"
+                    android:padding="7dp"
+                    />
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_toEndOf="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Điện thoại"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_below="@+id/title"
+                    android:layout_toEndOf="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Điện thoại"
+                    android:textColor="#051673"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gv_canhan"
+                android:layout_margin="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imagekhoa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/khoa"
+                    android:background="@drawable/bottomsheet_radius"
+                    android:layout_margin="10dp"
+                    android:layout_centerVertical="true"
+                    android:padding="7dp"
+                    />
+                <TextView
+                    android:id="@+id/titlekhoa"
+                    android:layout_toEndOf="@+id/imagekhoa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Khoa"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:id="@+id/contentkhoa"
+                    android:layout_below="@+id/titlekhoa"
+                    android:layout_toEndOf="@+id/imagekhoa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Điện thoại"
+                    android:textColor="#051673"
+                    />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_dangxuat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng xuất"
+                android:background="@drawable/quyche_quydinh"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:elevation="15dp"
+                android:padding="10dp"
+                android:textColor="#FFF"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

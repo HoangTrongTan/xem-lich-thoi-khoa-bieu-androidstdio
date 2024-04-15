@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+
+    >
+    <LinearLayout
+        android:id="@+id/list_item_tuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="#D1F4D3"
+        >
+        <TextView
+            android:id="@+id/tietbd_kt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiết bắt đầu"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/sophong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="số phòng"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tenmon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tên môn"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/giangvien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tenlop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tên lớp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

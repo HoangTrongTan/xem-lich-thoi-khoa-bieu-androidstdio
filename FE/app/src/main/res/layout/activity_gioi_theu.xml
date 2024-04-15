@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GioiTheu"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageButton
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"
+            android:background="@drawable/corner_16dp_borrder_gray"
+            android:layout_margin="15dp"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:text="Giới thiệu"
+            />
+    </RelativeLayout>
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Web và di động là hai trong số các công nghệ được phát triển ứng dụng nhiều nhất do sự phổ biến của chúng trong cuộc sống. Trường Đại học Sao Đỏ đã áp dụng nhiều ứng dụng Web phục vụ quảng bá truyền thông, quản lý và đào tạo nhưng chưa có nhiều ứng dụng dạng app được phát triển trên điện thoại. Một số sản phẩm được đóng gói do bên thứ 3 cung cấp nên khó trong việc chủ động để can thiệp, mở rộng, bảo trì, nâng cấp và bảo mật.
+Hơn nữa, vấn đề xếp thời khóa biểu là một bài toán phức tạp nhưng lại phổ biến tại trường Đại học. Việc sử dụng đồng thời nhiều ứng dụng do nhiều bên phát triển và cung cấp mà nhà trường đang sử dụng gây bất đồng bộ về dữ liệu như lịch học của sinh viên, lịch giảng dạy của giảng viên, điểm danh trên hệ thống hành chính điện tử của nhà trường,...
+Việc xây dựng cổng thông tin trường Đại học Sao Đỏ trên điện thoại thông minh tạo ra  một ứng dụng trên Web và điện thoại di động cho cả sinh viên và giảng viên góp phần tăng hiệu quả trong giảng dạy, học tập.
+SDUadr là cổng thông tin trên thiết bị thông minh (smartphone,tablet,...) Vận dụng 2 học phần Phát triển ứng dụng Web và Phát triển ứng dụng di động dựa trên công nghệ Webservices để xây dựng phần mềm trắc nghiệm. Môi trường Web (dành cho giảng viên) và môi trường di động (dành cho sinh viên) đồng nhất dữ liệu và trao đổi qua cơ sở dữ liệu MySQL trên Internet lưu tại Server.
+        Xây dựng ứng dụng Web quản lý thời khóa biểu, giảng viên, sinh viên, tin tức và thông báo của nhà trường.
+         Xây dựng ứng dụng đóng gói trên điện thoại thông minh cho sinh viên, giảng viên xem lịch học, lịch giảng dạy và điểm danh sinh viên."
+        android:textStyle="bold"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="15dp"
+    app:cardCornerRadius="25dp"
+    android:layout_margin="10dp"
+
+    >
+    <RelativeLayout
+        android:id="@+id/itemThongBao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/imageclocks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clocks"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/tieude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageclocks"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:text="Nghỉ học dịp nghỉ lễ"
+            android:textColor="#CE000000"
+            />
+        <TextView
+            android:id="@+id/thoigiangieuluc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tieude"
+            android:layout_marginLeft="10dp"
+            android:text="24/04/2002"
+            />
+        <ImageView
+            android:id="@+id/image_thongbaochung"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="15dp"
+            android:elevation="15dp"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

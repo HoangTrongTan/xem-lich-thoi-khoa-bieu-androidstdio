@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chỉnh sửa thông tin cá nhân"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:theme="@style/Theme.Material3.Light.NoActionBar"
+        android:id="@+id/txt_input_Email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        app:startIconDrawable="@drawable/email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:startIconTint="@color/xanhbien"
+        app:hintTextColor="#4b0082"
+        android:textColorHint="#4b0082"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/vang"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/xanhbien"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:theme="@style/Theme.Material3.Light.NoActionBar"
+        android:id="@+id/txt_input_phone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Điện thoai"
+        app:startIconDrawable="@drawable/phonee"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:startIconTint="@color/xanhbien"
+        app:hintTextColor="#4b0082"
+        android:textColorHint="#4b0082"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/vang"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/xanhbien"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtphone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn Giới tính"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_GioiTinh"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rdNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:layout_marginRight="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rdNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ"
+            android:layout_marginRight="10dp"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày Sinh"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        />
+    <DatePicker
+        android:id="@+id/ngaysinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:spinnersShown="true"
+        />
+    <Button
+        android:id="@+id/capnhat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cập nhật"
+        android:background="@drawable/infoma"
+        android:textColor="#FFF"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        />
+</LinearLayout>

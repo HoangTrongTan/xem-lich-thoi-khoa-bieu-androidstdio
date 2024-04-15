@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    >
+
+    <com.example.appstudent.customTextView.FFF_Tusj
+        android:id="@+id/hocky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#06EF0A"
+        android:text="Chọn học kỳ"
+        android:gravity="center"
+        android:padding="10dp"
+        />
+    <Button
+        android:id="@+id/hocky1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Học kỳ 1 Năm học 2022-2023"
+        android:gravity="center"
+        android:background="@drawable/bottomsheet_radius"
+        android:elevation="20dp"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/hocky2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Học kỳ 2 Năm học 2022-2023"
+        android:background="@drawable/bottomsheet_radius"
+        android:textColor="@color/white"
+        android:elevation="20dp"
+        android:layout_marginBottom="60dp"
+        />
+
+</LinearLayout>

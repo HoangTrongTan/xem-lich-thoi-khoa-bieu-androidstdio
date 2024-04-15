@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tablayout_Fragment.bottom_fragment_notifi"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_back"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/tabone"
+                    android:background="@drawable/round_back_white"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:text="Thông báo chung"
+                    android:gravity="center"
+                    android:textColor="#151515"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/tabtwo"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:text="Thông báo riêng"
+                    android:gravity="center"
+                    android:textColor="#FBF9F9"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tablayout_Fragment.Ngay_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <Button
+                android:id="@+id/chonngay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tháng 3 2023"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/button_corrner"
+                android:textColor="#0B7A0F"
+                android:elevation="20dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/calendar"
+                android:layout_weight="0"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/thu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thứ 5"
+            android:textSize="20dp"
+
+            android:textColor="#0B8710"/>
+        <TextView
+            android:id="@+id/ngay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày 9"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#06870B"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_ngay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>
